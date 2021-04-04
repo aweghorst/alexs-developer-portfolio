@@ -13,7 +13,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-
+/*Body Styling*/
 body {
 color: var(--navy);
 display:flex;
@@ -21,27 +21,7 @@ flex-direction: column;
 margin: 0;
 }
 
-.grid-container {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1;
-}
-
-.grid-item-project {
-  width: 100px;
-  display: flex;
-  flex-wrap: flex;
-  flex: 1;
-}
-
-.grid-item-Contact {
-  width: 800px;
-  width: flex;
-  flex-wrap: flex;
-  flex-direction: row;
-}
-/*Header Section Start*/
+/*Header*/
 header {
 width: 100%;
 padding: 10px;
@@ -67,6 +47,7 @@ header a {
   color: var(--navy);
 }
 
+/*navigation*/
 header nav {
   margin: 7px 0;
 }
@@ -95,8 +76,8 @@ header nav ul li a:hover {
   border-radius: 3px;
   text-shadow:none;
 }
-/*Header Section End*/
-/*Hero section start */
+
+/*Hero*/
 .hero {
   width:100%;
   height: 300px;
@@ -126,6 +107,7 @@ header nav ul li a:hover {
   font-size: 34px;
 }
 
+/*Main Section of the Page*/
 main {
   display: flex;
   flex-direction: row;
@@ -140,18 +122,6 @@ main h2 {
 .grid-container {
   display:flex;
   flex-direction:column;
-  }
-
-#aboutme {
-  padding: 2px;
-  display:flex;
-  justify-content:space-between;
-  }
-
-#work {
-  justify-content:space-between;
-  display:flex;
-  padding:2px;
 }
 
 .sectionheader {
@@ -162,8 +132,8 @@ main h2 {
   flex-wrap:wrap;
   margin-bottom:40px;
   min-width: 200px;
-
 }
+
 .sectioninfo {
   display:inline-flex;
   width:82%;
@@ -174,9 +144,23 @@ main h2 {
   margin-left:5px;
   margin-top: 30px;
   justify-content: space-around;
-
 }
 
+/*About Me Section*/
+#aboutme {
+  padding: 2px;
+  display:flex;
+  justify-content:space-between;
+  }
+
+/*Work Section*/
+#work {
+  justify-content:space-between;
+  display:flex;
+  padding:2px;
+}
+
+/*Project Section Begins */
 .project1 {
   width:100%;
   height:60vh;
@@ -184,20 +168,6 @@ main h2 {
   position:relative;
   background-image: url(./Images/runbuddy-bg.jpg);
   background-size:cover;
-}
-
-.project1::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(255,255,255,0.4);
-}
-
-.project1:hover::before {
-  background-color: rgba(0,0,0,0);
 }
 
 .project2 {
@@ -209,19 +179,6 @@ main h2 {
   background-size: cover;
 }
 
-.project2::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(255,255,255,0.4);
-}
-
-.project2:hover::before {
-  background-color: rgba(0,0,0,0);
-}
 .project3 {
   width:50%;
   height:25vh;
@@ -229,20 +186,6 @@ main h2 {
   border: 2px solid var(--cyan);
   background-image: url(./Images/robotgladiators-bg.jpg);
   background-size: cover;
-}
-
-.project3::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(255,255,255,0.4);
-}
-
-.project3:hover::before {
-  background-color: rgba(0,0,0,0);
 }
 
 .project4 {
@@ -257,20 +200,6 @@ main h2 {
   background-color: #ffea00;
 }
 
-.project4::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(255,255,255,0.4);
-}
-
-.project4:hover::before {
-  background-color: rgba(0,0,0,0);
-}
-
 .project5 {
   width:50%;
   height:25vh;
@@ -278,23 +207,9 @@ main h2 {
   border: 2px solid var(--cyan);
   background-image: url(./Images/theheavy-bg.jpg);
   background-size: cover;
-  
 }
 
-.project5::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(255,255,255,0.4);
-}
-
-.project5:hover::before {
-  background-color: rgba(0,0,0,0);
-}
-
+/*Project Title and Language Used*/
 .projectcard {
   position:absolute;
   bottom: 8%;
@@ -309,6 +224,23 @@ main h2 {
 font-size: 14px;
 }
 
+/*Adds the shading seen before hovering*/
+.project1::before, .project2::before, .project3::before, .project4::before, .project5::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.4);
+}
+
+/*Removes shading and sets opacity to 100 on hover*/
+.project1:hover::before, .project2:hover::before, .project3:hover::before, .project4:hover::before, .project5:hover::before {
+  background-color: rgba(0,0,0,0);
+}
+
+/*Contact Me Section*/
 #contactme {
   display:flex;
   padding: 2px;
@@ -335,6 +267,7 @@ font-size: 14px;
   border-bottom: 3px solid #0096FF;
 }
 
+/*Footer*/
 footer {
   display: flex;
   justify-content: center;
@@ -346,103 +279,81 @@ footer {
 }
 
 
+/*End of Full Page Styling*/
+
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-nav {
-  width: 70%;
-  justify-content:space-between;
-  padding: 0 20px 0 0;
+  nav {
+    width: 70%;
+    justify-content:space-between;
+    padding: 0 20px 0 0;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  
-
-  *{
-    position:relative;
-  }
   header {
-    position:relative;
     flex-wrap:wrap;
   }
 
   header h1{
-  justify-content:center;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-}
-#aboutme {
-  align-items: center;
-  margin: 0;
-  flex-wrap: wrap;
+    justify-content:center;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #aboutme {
+    flex-wrap: wrap;
+  }
+
+  #work {
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+  }
+
+  #contactme {
+    flex-wrap: wrap;
+  }
+
+  .sectionheader {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid var(--navy);
+    margin: 0;
+
+  }
+
+  .project1, .project2, .project3, .project4, .project5 {
+    border: 2px solid var(--navy);
+  }
+
+  .sectioninfo {
+    width: 100%;
+    border: none;
+  }
+
+  nav {
+    flex: 1 70%;
+    flex-wrap:wrap;
+    padding: 0;
+  }
 }
 
-#work {
-  align-items: center;
-  margin: 0;
-  flex-wrap: wrap;
-  padding-bottom: 5%;
+  /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+  .projectcard {
+    position: 0 0;
+  }
+
+  #subtitle {
+    width:100%;
+    right:none;
+    justify-content: center;
+    flex-wrap: wrap;
+    position:relative;
+    text-align: center;
+  }
 }
 
-#contactme {
-  align-items: center;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-.sectionheader {
-  width: 100%;
-  text-align: center;
-  padding: 3% 0 0 0;
-  border-bottom: 3px solid var(--navy);
-  margin: 0;
-
-}
-
-.project1, .project2, .project3, .project4, .project5 {
-  border: 2px solid var(--navy);
-}
-
-.sectioninfo {
-
-  flex-wrap: wrap;
-  width: 100%;
-  border: none;
-}
-
-nav {
-  flex: 1 70%;
-  flex-wrap:wrap;
-  padding: 0;
-}
-
-.hero{
-  position:relative;
-}
-
-#subtitle {
-  position:absolute;
-}
-}
-
-/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-
-.projectcard {
-  position: 0 0;
-}
-
-#subtitle {
-  min-width: 200px;
-  right:none;
-  justify-content: center;
-  flex-wrap: wrap;
-  position:relative;
-}
-
-#subtitle h2 {
-  font-size:5vw;
-}
-}
-}
