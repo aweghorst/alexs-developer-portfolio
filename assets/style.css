@@ -13,6 +13,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
 body {
 color: var(--navy);
 display:flex;
@@ -111,8 +112,7 @@ header nav ul li a:hover {
   display: flex;
   background-color:var(--cyan);
   background-size: cover;
-  background-position: 80%;
-  justify-content: flex-end; /*this will move the text to the right side of the image background */
+  justify-content: flex-end;
   align-items: baseline;
   position: absolute;
   bottom: 10px;
@@ -124,7 +124,6 @@ header nav ul li a:hover {
 #subtitle h2 {
   color: var(--dark-gray);
   font-size: 34px;
-  text-align: right;
 }
 
 main {
@@ -162,6 +161,7 @@ main h2 {
   text-align:end;
   flex-wrap:wrap;
   margin-bottom:40px;
+  min-width: 200px;
 
 }
 .sectioninfo {
@@ -177,7 +177,6 @@ main h2 {
 
 }
 
-
 .project1 {
   width:100%;
   height:60vh;
@@ -185,11 +184,20 @@ main h2 {
   position:relative;
   background-image: url(./Images/runbuddy-bg.jpg);
   background-size:cover;
-  opacity:80%;
 }
 
-.project1:hover {
-  opacity:100%;
+.project1::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.project1:hover::before {
+  background-color: rgba(0,0,0,0);
 }
 
 .project2 {
@@ -199,13 +207,21 @@ main h2 {
   border: 2px solid var(--cyan);
   background-image: url(./Images/horiseon-bg.jpg);
   background-size: cover;
-  opacity:60%;
 }
 
-.project2:hover {
-  opacity: 100%;
+.project2::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.4);
 }
 
+.project2:hover::before {
+  background-color: rgba(0,0,0,0);
+}
 .project3 {
   width:50%;
   height:25vh;
@@ -213,11 +229,20 @@ main h2 {
   border: 2px solid var(--cyan);
   background-image: url(./Images/robotgladiators-bg.jpg);
   background-size: cover;
-  opacity:60%;
 }
 
-.project3:hover {
-  opacity: 100%
+.project3::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.project3:hover::before {
+  background-color: rgba(0,0,0,0);
 }
 
 .project4 {
@@ -230,11 +255,20 @@ main h2 {
   background-repeat:no-repeat;
   background-position:right;
   background-color: #ffea00;
-  opacity:60%;
 }
 
-.project4:hover {
-  opacity: 100%;
+.project4::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.project4:hover::before {
+  background-color: rgba(0,0,0,0);
 }
 
 .project5 {
@@ -243,30 +277,43 @@ main h2 {
   position:relative;
   border: 2px solid var(--cyan);
   background-image: url(./Images/theheavy-bg.jpg);
-  background-size:cover;
-  opacity:60%;
+  background-size: cover;
+  
 }
 
-.project5:hover {
-  opacity: 100%;
+.project5::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255,255,255,0.4);
 }
 
+.project5:hover::before {
+  background-color: rgba(0,0,0,0);
+}
 
 .projectcard {
   position:absolute;
-  bottom: 20%;
+  bottom: 8%;
   background-color: var(--cyan);
-  font-size: 28px;
+  font-size: 24px;
   padding: 5px 20px;
-  opacity:initial;
-  z-index: 999;
+  opacity: 1.0;
+  color: var(--navy);
+}
+
+.projectcard p{
+font-size: 14px;
 }
 
 #contactme {
   display:flex;
   padding: 2px;
   justify-content: space-between;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   color: var(--navy);
   font-size:18px;
   text-decoration: none;
@@ -281,7 +328,6 @@ main h2 {
   border-bottom: 3px solid var(--navy);
   padding-bottom:3px;
   text-decoration: none;
-
 }
 
 #contactme a:hover {
@@ -294,117 +340,109 @@ footer {
   justify-content: center;
   padding: 15px 0px;
   background-color: var(--dark-gray);
-  margin-top: 20px;
+  margin-top: 10px;
   align-items: center;
   color:var(--cyan);
 }
 
-/*
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER 
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
+nav {
+  width: 70%;
+  justify-content:space-between;
+  padding: 0 20px 0 0;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  
+
+  *{
     position:relative;
   }
-
-  header h1 {
-    width: 100%;
-    text-align: center;
+  header {
+    position:relative;
+    flex-wrap:wrap;
   }
 
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  header nav ul li a {
-    font-size: 20px;
-  }
-
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
-
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
-    text-align: center;
-  }
-
-  .section-title {
-    width: 80%;
-  }
-  
-  .trainer {
-    flex: 0 70%;
-  }
-  
-  .contact-info iframe{
-    flex: 1 100%;
-  }
+  header h1{
+  justify-content:center;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+#aboutme {
+  align-items: center;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
- MEDIA QUERY FOR TABLETS AND SMALLER 
-@media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
-  }
-
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
+#work {
+  align-items: center;
+  margin: 0;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
 }
 
-MEDIA QUERY FOR MOBILE PHONES AND SMALLER 
+#contactme {
+  align-items: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.sectionheader {
+  width: 100%;
+  text-align: center;
+  padding: 3% 0 0 0;
+  border-bottom: 3px solid var(--navy);
+  margin: 0;
+
+}
+
+.project1, .project2, .project3, .project4, .project5 {
+  border: 2px solid var(--navy);
+}
+
+.sectioninfo {
+
+  flex-wrap: wrap;
+  width: 100%;
+  border: none;
+}
+
+nav {
+  flex: 1 70%;
+  flex-wrap:wrap;
+  padding: 0;
+}
+
+.hero{
+  position:relative;
+}
+
+#subtitle {
+  position:absolute;
+}
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
 
-  .section-title {
-    width: 95%;
-  }
+.projectcard {
+  position: 0 0;
+}
 
-  .intro p {
-    width: 100%;
-  }
+#subtitle {
+  min-width: 200px;
+  right:none;
+  justify-content: center;
+  flex-wrap: wrap;
+  position:relative;
+}
 
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-
-  .contact-form {
-    order: 3;
-  }
+#subtitle h2 {
+  font-size:5vw;
+}
+}
 }
