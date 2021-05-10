@@ -1,35 +1,35 @@
 :root {
---navy: rgb(68,88,118);
---sky-blue: rgb(107,147,176);
---dark-blue: rgb(28,58,94);
---dark-gray: rgb(49,52,61);
---cyan: rgb(146,204,205);
---light-gray: rgb(132,147,162);
+  --navy: rgb(68, 88, 118);
+  --sky-blue: rgb(107, 147, 176);
+  --dark-blue: rgb(28, 58, 94);
+  --dark-gray: rgb(49, 52, 61);
+  --cyan: rgb(146, 204, 205);
+  --light-gray: rgb(132, 147, 162);
 }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*Body Styling*/
 body {
-color: var(--navy);
-display:flex;
-flex-direction: column;
-margin: 0;
+  color: var(--navy);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 /*Header*/
 header {
-width: 100%;
-padding: 10px;
-display:flex;
-justify-content: space-between;
-align-items:center;
-background-color: var(--dark-gray);
-top: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-gray);
+  top: 0;
 }
 
 header h1 {
@@ -66,38 +66,38 @@ header nav ul li a {
   font-size: 20px;
   color: var(--cyan);
   border-bottom: 3px solid var(--cyan);
-  padding-bottom:3px;
-  text-shadow: 0 0 10px rgba(0,0,0,0.5)
+  padding-bottom: 3px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
   background: var(--cyan);
   color: var(--dark-gray);
   border-radius: 3px;
-  text-shadow:none;
+  text-shadow: none;
 }
 
 /*Hero*/
 .hero {
-  width:100%;
+  width: 100%;
   height: 300px;
   background-image: url(./Images/hero.jpg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  position:relative;
+  position: relative;
 }
 
 .hero img {
-border: 6px solid var(--dark-gray);
-margin: 2.5%;
-opacity: 95%;
-justify-content:flex-start;
+  border: 6px solid var(--dark-gray);
+  margin: 2.5%;
+  opacity: 95%;
+  justify-content: flex-start;
 }
 
 #subtitle {
   margin: 12px 95px;
-  background-color:var(--cyan);
+  background-color: var(--cyan);
   background-size: cover;
   position: absolute;
   bottom: 10px;
@@ -119,33 +119,33 @@ main {
   flex: 1;
 }
 main h2 {
-  font-size:35px;
-  justify-content:flex-start;
+  font-size: 35px;
+  justify-content: flex-start;
   margin-left: 100px;
 }
 .grid-container {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 .sectionheader {
-  font-size:50px;
-  width:18%;
+  font-size: 50px;
+  width: 18%;
   padding: 2% 5px 0 40px;
-  text-align:end;
-  flex-wrap:wrap;
-  margin-bottom:40px;
+  text-align: end;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
   min-width: 200px;
 }
 
 .sectioninfo {
-  display:inline-flex;
-  width:82%;
-  flex-wrap:wrap;
+  display: inline-flex;
+  width: 82%;
+  flex-wrap: wrap;
   border-left: 4px solid var(--navy);
-  padding:0 6% 0 3%;
-  align-items:center;
-  margin-left:5px;
+  padding: 0 6% 0 3%;
+  align-items: center;
+  margin-left: 5px;
   margin-top: 30px;
   justify-content: space-around;
 }
@@ -153,105 +153,161 @@ main h2 {
 /*About Me Section*/
 #aboutme {
   padding: 2px;
-  display:flex;
-  justify-content:space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 
 /*Work Section*/
 #work {
-  justify-content:space-between;
-  display:flex;
-  padding:2px;
+  justify-content: space-between;
+  display: flex;
+  padding: 2px;
 }
 
 /*Project Section Begins */
 .project1 {
-  width:100%;
-  height:60vh;
+  width: 100%;
+  height: 60vh;
   border: 4px solid var(--cyan);
-  position:relative;
-  background-image: url(./Images/runbuddy-bg.jpg);
+  position: relative;
+  background-image: url(./Images/eventbus.png);
   background-size:cover;
 }
 
 .project2 {
-  width:50%;
-  height:25vh;
-  position:relative;
+  width: 50%;
+  height: 25vh;
+  position: relative;
   border: 2px solid var(--cyan);
-  background-image: url(./Images/horiseon-bg.jpg);
+  background-image: url(./Images/runbuddy-bg.jpg);
   background-size: cover;
 }
 
 .project3 {
-  width:50%;
-  height:25vh;
-  position:relative;
+  width: 50%;
+  height: 25vh;
+  position: relative;
   border: 2px solid var(--cyan);
   background-image: url(./Images/robotgladiators-bg.jpg);
   background-size: cover;
 }
 
 .project4 {
-  width:50%;
-  height:25vh;
-  position:relative;
+  width: 50%;
+  height: 25vh;
+  position: relative;
   border: 2px solid var(--cyan);
   background-image: url(./Images/rockpaperscissors-bg.png);
-  background-size:contain;
-  background-repeat:no-repeat;
-  background-position:right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   background-color: #ffea00;
 }
 
 .project5 {
-  width:50%;
-  height:25vh;
-  position:relative;
+  width: 50%;
+  height: 25vh;
+  position: relative;
   border: 2px solid var(--cyan);
-  background-image: url(./Images/theheavy-bg.jpg);
+  background-image: url(./Images/horiseon-bg.jpg);
+  background-size: cover;
+}
+.project6 {
+  width: 50%;
+  height: 25vh;
+  position: relative;
+  border: 2px solid var(--cyan);
+
+  background-size: cover;
+}
+.project7 {
+  width: 50%;
+  height: 25vh;
+  position: relative;
+  border: 2px solid var(--cyan);
+
+  background-size: cover;
+}
+.project8 {
+  width: 50%;
+  height: 25vh;
+  position: relative;
+  border: 2px solid var(--cyan);
+
+  background-size: cover;
+}
+.project9 {
+  width: 50%;
+  height: 25vh;
+  position: relative;
+  border: 2px solid var(--cyan);
+
+  background-size: cover;
+}
+.project10 {
+  width: 50%;
+  height: 25vh;
+  position: relative;
+  border: 2px solid var(--cyan);
+
+  background-size: cover;
+}
+.project11 {
+  width: 50%;
+  height: 25vh;
+  position: relative;
+  border: 2px solid var(--cyan);
+
   background-size: cover;
 }
 
 /*Project Title and Language Used*/
 .projectcard {
-  position:absolute;
+  position: absolute;
   bottom: 8%;
   background-color: var(--cyan);
   font-size: 24px;
   padding: 5px 20px;
-  opacity: 1.0;
+  opacity: 1;
   color: var(--navy);
 }
 
-.projectcard p{
-font-size: 14px;
+.projectcard p {
+  font-size: 14px;
 }
 
 /*Adds the shading seen before hovering*/
-.project1::before, .project2::before, .project3::before, .project4::before, .project5::before{
+.project1::before,
+.project2::before,
+.project3::before,
+.project4::before,
+.project5::before {
   content: "";
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 /*Removes shading and sets opacity to 100 on hover*/
-.project1:hover::before, .project2:hover::before, .project3:hover::before, .project4:hover::before, .project5:hover::before {
-  background-color: rgba(0,0,0,0);
+.project1:hover::before,
+.project2:hover::before,
+.project3:hover::before,
+.project4:hover::before,
+.project5:hover::before {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /*Contact Me Section*/
 #contactme {
-  display:flex;
+  display: flex;
   padding: 2px;
   justify-content: space-between;
   padding-bottom: 40px;
   color: var(--navy);
-  font-size:18px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -262,13 +318,13 @@ font-size: 14px;
   font-weight: bold;
   color: var(--navy);
   border-bottom: 3px solid var(--navy);
-  padding-bottom:3px;
+  padding-bottom: 3px;
   text-decoration: none;
 }
 
 #contactme a:hover {
-  color:#0096FF;
-  border-bottom: 3px solid #0096FF;
+  color: #0096ff;
+  border-bottom: 3px solid #0096ff;
 }
 
 /*Footer*/
@@ -279,18 +335,16 @@ footer {
   background-color: var(--dark-gray);
   margin-top: 10px;
   align-items: center;
-  color:var(--cyan);
+  color: var(--cyan);
 }
 
-
 /*End of Full-Size Page Styling*/
-
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   nav {
     width: 70%;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 0 20px 0 0;
   }
 }
@@ -298,19 +352,19 @@ footer {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   header {
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
 
   .hero {
-    width:100%;
+    width: 100%;
   }
 
   #subtitle {
     flex: 1 50%;
   }
 
-  header h1{
-    justify-content:center;
+  header h1 {
+    justify-content: center;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -334,10 +388,13 @@ footer {
     text-align: center;
     border-bottom: 3px solid var(--navy);
     margin: 0;
-
   }
 
-  .project1, .project2, .project3, .project4, .project5 {
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5 {
     border: 2px solid var(--navy);
   }
 
@@ -348,30 +405,29 @@ footer {
 
   nav {
     flex: 1 70%;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding: 0;
   }
 }
 
-  /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
   .projectcard {
     position: 0 0;
   }
 
   .hero img {
-    display:inline-block;
+    display: inline-block;
     height: 0;
     border: none;
   }
 
   #subtitle {
-    width:100%;
-    right:none;
+    width: 100%;
+    right: none;
     justify-content: center;
     flex-wrap: nowrap;
     position: relative;
     text-align: center;
   }
 }
-
