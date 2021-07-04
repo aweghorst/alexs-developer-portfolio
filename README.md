@@ -7,10 +7,11 @@ This is the beginning of a project portfolio for Alex Weghorst as he goes throug
 * CSS
 
 ## Website
-
+https://aweghorst.github.io/alexs-developer-portfolio/
 
 ##ScreenShot
-![Horiseon_Refactor_Project](https://user-images.githubusercontent.com/80176140/112739541-b572b200-8f3a-11eb-80fe-239123214496.png)
+![Alex's Portfolio](https://user-images.githubusercontent.com/80176140/113527091-04939500-9582-11eb-82d0-eedcd787ef7a.png)
+
 
 ## Contribution
 Made with ❤️ by Alex Weghorst
