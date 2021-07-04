@@ -170,8 +170,8 @@ main h2 {
   height: 60vh;
   border: 4px solid var(--cyan);
   position: relative;
-  background-image: url(./Images/eventbus.png);
-  background-size:cover;
+  background-image: url(./Images/pour-decisions.jpg);
+  background-size: cover;
 }
 
 .project2 {
@@ -179,7 +179,7 @@ main h2 {
   height: 25vh;
   position: relative;
   border: 2px solid var(--cyan);
-  background-image: url(./Images/runbuddy-bg.jpg);
+  background-image: url(./Images/eventbus.png);
   background-size: cover;
 }
 
@@ -188,7 +188,7 @@ main h2 {
   height: 25vh;
   position: relative;
   border: 2px solid var(--cyan);
-  background-image: url(./Images/robotgladiators-bg.jpg);
+  background-image: url(./Images/runbuddy-bg.jpg);
   background-size: cover;
 }
 
@@ -197,10 +197,10 @@ main h2 {
   height: 25vh;
   position: relative;
   border: 2px solid var(--cyan);
-  background-image: url(./Images/rockpaperscissors-bg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: url(./Images/robotgladiators-bg.jpg);
+  background-size: stretch;
+  background-repeat: repeat;
+  background-position: top;
   background-color: #ffea00;
 }
 
@@ -209,56 +209,8 @@ main h2 {
   height: 25vh;
   position: relative;
   border: 2px solid var(--cyan);
-  background-image: url(./Images/horiseon-bg.jpg);
-  background-size: cover;
-}
-.project6 {
-  width: 50%;
-  height: 25vh;
-  position: relative;
-  border: 2px solid var(--cyan);
-
-  background-size: cover;
-}
-.project7 {
-  width: 50%;
-  height: 25vh;
-  position: relative;
-  border: 2px solid var(--cyan);
-
-  background-size: cover;
-}
-.project8 {
-  width: 50%;
-  height: 25vh;
-  position: relative;
-  border: 2px solid var(--cyan);
-
-  background-size: cover;
-}
-.project9 {
-  width: 50%;
-  height: 25vh;
-  position: relative;
-  border: 2px solid var(--cyan);
-
-  background-size: cover;
-}
-.project10 {
-  width: 50%;
-  height: 25vh;
-  position: relative;
-  border: 2px solid var(--cyan);
-
-  background-size: cover;
-}
-.project11 {
-  width: 50%;
-  height: 25vh;
-  position: relative;
-  border: 2px solid var(--cyan);
-
-  background-size: cover;
+  background-size: contain;
+  background-image: url(./Images/rockpaperscissors-bg.png);
 }
 
 /*Project Title and Language Used*/
